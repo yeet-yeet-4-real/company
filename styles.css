@@ -36,19 +36,6 @@ h1 {
     align-self: center;
 }
 
-#main .banner .banner-section h1 {
-    padding-bottom: 20px;
-    font-family: 'Rampart One', cursive;
-    letter-spacing: 1px;
-}
-
-#main .banner .banner-section p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    letter-spacing: 1px;
-    line-height: 1.6;
-}
-
 #navbar ul {
     color: #ebebeb;
 }
@@ -80,7 +67,7 @@ h1 {
 #main .banner {
     position: relative;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     background-image: url('./img/banner.jfif');
     background-repeat: no-repeat;
     background-position: center center;
@@ -98,6 +85,19 @@ h1 {
     /* height: 300px; */
     /* box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.6); */
     border-radius: 3px;
+}
+
+#main .banner .banner-section h1 {
+    padding-bottom: 20px;
+    font-family: 'Rampart One', cursive;
+    letter-spacing: 1px;
+}
+
+#main .banner .banner-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 #main .banner .banner-section .btn-section {
@@ -193,6 +193,10 @@ h1 {
 }
 
 .team .group-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 200px;
     text-align: center;
@@ -200,7 +204,7 @@ h1 {
 
 .team .group .card {
     width: 400px;
-    height: 700px;
+    height: 400px;
     margin: 20px;
     padding: 20px;
     background-color: #ccc;
@@ -209,5 +213,11 @@ h1 {
 .team .group-2 {
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+    background: url('./img/istockphoto-174931919-170667a.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
