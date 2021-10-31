@@ -51,6 +51,10 @@ h1 {
     text-transform: uppercase;
 }
 
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
 #main .banner::before {
     content: "";
     position: absolute;
@@ -75,6 +79,12 @@ h1 {
     margin-bottom: 150px;
 }
 
+@media only screen and (max-width: 485px) {
+    .banner-section {
+        display: none;
+    }
+}
+
 #main .banner .banner-section {
     position: relative;
     background-color: #f5f0f0;
@@ -82,8 +92,6 @@ h1 {
     left: 10%;
     padding: 20px;
     max-width: 500px;
-    /* height: 300px; */
-    /* box-shadow: 0 1px 10px 4px rgba(0, 0, 0, 0.6); */
     border-radius: 3px;
 }
 
@@ -109,20 +117,34 @@ h1 {
     top: 40%;
     padding: 10px 30px;
     border-radius: 30px;
-    background-color: #07990e;
     text-decoration: none;
-    color: #f5f0f0;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.btn:hover {
+.btn-primary {
+    background-color: #07990e;
+    color: #f5f0f0;
+}
+
+.btn-secondary {
     background-color: #f5f0f0;
     border: 2px solid #07990e;
     color: #07990e;
 }
 
-.products {
+.btn-primary:hover {
+    background-color: #f5f0f0;
+    border: 2px solid #07990e;
+    color: #07990e;
+}
+
+.btn-secondary:hover {
+    background-color: #07990e;
+    color: #f5f0f0;
+}
+
+#products {
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -136,6 +158,7 @@ h1 {
     margin: 50px;
     width: 100%;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 .product-1,
@@ -171,25 +194,8 @@ h1 {
 
 .product .product-img img {
     width: 100%;
+    opacity: 0.85;
     height: 100%;
-}
-
-.btn-reverse {
-    background-color: #f5f0f0;
-    border: 2px solid #07990e;
-    color: #07990e;
-    position: relative;
-    top: 30%;
-    padding: 10px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.btn-reverse:hover {
-    background-color: #07990e;
-    color: #f5f0f0;
 }
 
 .team .group-1 {
@@ -203,21 +209,48 @@ h1 {
 }
 
 .team .group .card {
-    width: 400px;
+    text-align: center;
+    max-width: 340px;
     height: 400px;
     margin: 20px;
-    padding: 20px;
-    background-color: #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.team .group .card h4,
+.team .group .card p {
+    padding: 8px;
+}
+
+.team .group .card img {
+    width: 100%;
 }
 
 .team .group-2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 600px;
+    height: 550px;
     align-items: center;
-    background: url('./img/istockphoto-174931919-170667a.jpg');
+    background: url('./img/business.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+#footer {
+    color: #f5f0f0;
+    background-color: #0f0e0e;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    border-top: 1px solid hsla(0, 0%, 95%, 0.4);
+}
+
+#footer p {
+    letter-spacing: 1px;
+}
+
+#footer a {
+    color: #4350fc;
 }
