@@ -79,12 +79,6 @@ h1 {
     margin-bottom: 150px;
 }
 
-@media only screen and (max-width: 485px) {
-    .banner {
-        display: none;
-    }
-}
-
 #main .banner .banner-section {
     position: relative;
     background-color: #f5f0f0;
@@ -253,4 +247,10 @@ h1 {
 
 #footer a {
     color: #4350fc;
+}
+
+@media only screen and (max-width: 485px) {
+    .banner-section {
+        display: none;
+    }
 }
