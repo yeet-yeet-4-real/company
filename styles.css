@@ -249,8 +249,8 @@ h1 {
     color: #4350fc;
 }
 
-@media only screen and (max-width: 485px) {
-    .banner-section {
+@media only screen and (max-width: 490px) {
+    #main .banner .banner-section {
         display: none;
     }
 }
